@@ -1,0 +1,106 @@
+/* GLOBAL  */
+
+body {
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container-padding {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/*  MOBILE (≤640px)  */
+
+@media (max-width: 640px) {
+
+  .container-padding {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Navbar */
+  .flex.gap-8 {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  /* Banner */
+  section.relative {
+    height: 350px !important;
+  }
+
+  section.relative h1 {
+    font-size: 28px !important;
+  }
+
+  section.relative p {
+    font-size: 14px;
+  }
+
+  /* Why choose grid */
+  .lg\:grid-cols-4 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Products grid */
+  .md\:grid-cols-3 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Footer */
+  footer .grid {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  footer .flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer input {
+    font-size: 14px;
+  }
+}
+
+
+/*  TABLET (641px - 1024px) */
+
+@media (min-width: 641px) and (max-width: 1024px) {
+
+  .container-padding {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  /* Why choose grid */
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Products */
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Footer */
+  footer .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/*  LARGE DESKTOP  */
+
+@media (min-width: 1025px) {
+
+  .container-padding {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+}
